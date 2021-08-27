@@ -11,5 +11,5 @@ The finished product will include:
 
   - Python (Django and Django REST framework)
   - React (Typescript)
-  - Soon to add mongoDB database
+  - Postgres Database
  
