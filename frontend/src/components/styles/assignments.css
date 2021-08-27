@@ -1,0 +1,24 @@
+
+body{
+    margin:0;
+}
+
+.content{
+    display:flex;
+    justify-content: center;
+    margin:1em;
+    height:85vh;
+    overflow:hidden;
+}
+.assignment-container{
+    display:flex;
+    flex-direction: column;
+    box-shadow: 30px 30px 20px rgba(69, 69, 69, 0.3);
+    background: rgb(210, 210, 210, .8);
+    padding:0em 5em;
+}
+
+.assignment{
+    text-align: center;
+    padding:1em;
+}
