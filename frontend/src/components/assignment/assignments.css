@@ -1,0 +1,31 @@
+
+body{
+    margin:0;
+}
+
+.content{
+    display:flex;
+    justify-content: center;
+    margin:1em;
+    height:85vh;
+    overflow:hidden;
+}
+
+.assignment-list{
+    display: flex;
+    position: absolute;
+    width: 554px;
+    height:579px;
+    left:688px;
+    top:100px;
+    background-color: #233D4D;
+}
+
+.assignment-list p{
+    color:white;
+}
+
+.assignment{
+    text-align: center;
+    padding:1em;
+}

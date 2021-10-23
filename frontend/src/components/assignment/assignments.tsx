@@ -1,9 +1,8 @@
 import { render } from '@testing-library/react';
 import {useEffect, useState} from 'react';
 import axios, {AxiosResponse} from 'axios';
-import useFetch from "./hooks/hooks";
-
-import './styles/assignments.css';
+import useFetch from "../hooks/hooks";
+import "./assignments.css";
 
 const Assignments = () => {
 
@@ -13,7 +12,7 @@ const Assignments = () => {
   const onSubmit = () => {
     axios({
       method: 'post',
-      url: "http://127.0.0.1:8000/assignments/get-assignments/",
+      url: "http://127.0.0.1:8000/assignments/set-assignments/",
       data: {
         
       }
@@ -25,17 +24,13 @@ const Assignments = () => {
   }
 
   return(
-    <div>
-      {
-        data.map((assignment) => <p key={assignment.assignment_id}>{assignment.assignment_title}</p>)
-      }
-
-      <div className="create-assignment">
-        <form onSubmit={onSubmit}>
-          <input 
-            onChange={onChange}
-          />
-        </form>
+    <div className="assignment-container">
+      <div className="assignment-list">
+        <div className="assignment-list-item" draggable="true">
+          {
+            data.map((assignment) => <p className="assignment" key={assignment.assignment_id}>{assignment.assignment_title}</p>)
+          }
+        </div>
       </div>
     </div>
   )

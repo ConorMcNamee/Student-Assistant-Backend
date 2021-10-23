@@ -1,0 +1,24 @@
+.assignment-header{
+    color:white;
+    text-align: center;
+}
+
+.assignment-form-container{
+    position: absolute;
+    background-color: #233D4D;
+    height: 220px;
+    width: 400px;
+    top:700px;
+}
+
+.assignment-form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.assignment-list-item{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}

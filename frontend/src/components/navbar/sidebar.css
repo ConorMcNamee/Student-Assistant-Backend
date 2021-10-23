@@ -1,0 +1,11 @@
+.Sidebar{
+    position: fixed;
+    background-color: #233D4D;
+    left: 0;
+    top: 0;
+    height: 100%;
+}
+
+.Sidebar h1{
+    color:white; 
+}
