@@ -1,8 +1,8 @@
 import Assignments from './components/assignment/assignments';
-import AssignmentForm from './components/assignment/assignmentForm';
 import Sidebar from './components/navbar/Sidebar';
 
 import { useEffect, useState} from 'react';
+import { Link, Route, Routes } from 'react-router-dom';
 import axios, {AxiosResponse} from 'axios';
 
 import './styles/main.css';
@@ -11,12 +11,15 @@ const App = () => {
 
   return(
     <div className="App">
+      <Sidebar />
       <div className="content">
-        <Sidebar />
-        <Assignments />
-        <AssignmentForm />
+      <Routes>
+        <Route path='/assignment' element={<Assignments />} />
+      </Routes>
       </div>
     </div>
+
+
   );
 }
 

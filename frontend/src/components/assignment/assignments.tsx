@@ -2,6 +2,7 @@ import { render } from '@testing-library/react';
 import {useEffect, useState} from 'react';
 import axios, {AxiosResponse} from 'axios';
 import useFetch from "../hooks/hooks";
+import AssignmentForm from "./assignmentForm";
 import "./assignments.css";
 
 const Assignments = () => {
@@ -32,6 +33,7 @@ const Assignments = () => {
           }
         </div>
       </div>
+      <AssignmentForm />
     </div>
   )
 
