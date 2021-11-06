@@ -4,8 +4,35 @@
     left: 0;
     top: 0;
     height: 100%;
+    width: 256px;
 }
 
 .Sidebar h1{
     color:white; 
+    text-align: center;
+    font-size: 48px;
+    line-height: 42px;
 }
+
+.SidebarLinks{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    overflow-:hidden;
+}
+
+.SidebarLinkItem{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 40px;
+}
+
+.SidebarLinkItem a{
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+

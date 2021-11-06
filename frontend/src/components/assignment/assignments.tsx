@@ -3,6 +3,7 @@ import {useEffect, useState} from 'react';
 import axios, {AxiosResponse} from 'axios';
 import useFetch from "../hooks/hooks";
 import AssignmentForm from "./assignmentForm";
+
 import "./assignments.css";
 
 const Assignments = () => {
@@ -24,6 +25,7 @@ const Assignments = () => {
     console.log("E")
   }
 
+  console.log(data);
   return(
     <div className="assignment-container">
       <div className="assignment-list">

@@ -1,14 +1,18 @@
-.assignment-header{
-    color:white;
-    text-align: center;
-}
-
 .assignment-form-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     position: absolute;
     background-color: #233D4D;
     height: 220px;
-    width: 400px;
+    width: 554px;
     top:700px;
+    left:688px;
+}
+
+.assignment-header{
+    color:white;
+    text-align: center;
 }
 
 .assignment-form{
