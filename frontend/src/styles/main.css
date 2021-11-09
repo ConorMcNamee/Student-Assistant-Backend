@@ -5,7 +5,7 @@
 }
 
 body{
-    background: linear-gradient(138.56deg, rgba(235, 255, 0, 0.35) 31.15%, rgba(180, 132, 11, 0.5) 84.47%) no-repeat;
+    background-color: rgb(26, 26, 26);
     background-size: cover;
     overflow-y: hidden;
 }

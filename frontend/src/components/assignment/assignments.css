@@ -18,7 +18,9 @@ body{
     height:579px;
     left:688px;
     top:100px;
-    background-color: #233D4D;
+    background-color: #2a546e;
+    box-shadow: 30px 30px 30px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
 }
 
 .assignment-list p{
