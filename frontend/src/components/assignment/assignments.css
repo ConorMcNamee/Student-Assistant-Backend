@@ -1,3 +1,16 @@
+::-webkit-scrollbar{
+    width: 10px;
+}
+
+::-webkit-scrollbar-track{
+    background: #f1f1f1; 
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888; 
+    border-radius: 10px;
+}
 
 body{
     margin:0;
@@ -23,9 +36,28 @@ body{
     border-radius: 10px;
 }
 
-.assignment-list p{
-    color:white;
+.assignment-list-item{
+    overflow-y:scroll;
 }
+
+.assignment-list-item-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+.assignment-list-item-container input{
+    align-self: center;
+    height: 42px;
+    width: 42px;
+}
+
+.assignment-list-item-container p{
+    color: white;
+    font-size: 36px;
+}
+
 
 .assignment{
     text-align: center;
