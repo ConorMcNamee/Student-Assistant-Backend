@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  web:
+    build: ./student_assist
+    command: python manage.py runserver 0.0.0.0:8000
+    volumes:
+      - ./student_assist/:/usr/src/student_assist
+    ports:
+      - 8000:8000
+    env_file:
+      - ./student_assist/.env
