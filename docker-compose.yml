@@ -10,3 +10,14 @@ services:
       - 8000:8000
     env_file:
       - ./student_assist/.env
+  db:
+    image: postgres:13.0-alpine
+    volumes:
+      - postgres_data:/var/lib/postgresql/data/
+    environment:
+      - POSTGRES_USER=student_assist
+      - POSTGRES_PASSWORD=student_assist
+      - POSTGRES_DB=student_assist
+  
+volumes:
+  postgres_data:
